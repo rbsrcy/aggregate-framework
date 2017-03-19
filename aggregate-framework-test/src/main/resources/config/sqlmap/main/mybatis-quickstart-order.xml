@@ -38,7 +38,7 @@
 
     <insert id="insertAll" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO CQRS_QCK_ORDER
-        (STATUS_ID,MERCHANT_ORDER_NO,CREATE_TIME,LAST_UPDATE_TIME,VERSION)
+        (STATUS_ID,MERCHANT_ORDER_NO,CREATE_TIME,LAST_UPDATE_TIME,VERSION_ID)
         VALUES
         <foreach item="item" index="index" collection="list"
                  separator=",">
